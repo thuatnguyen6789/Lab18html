@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chua bai monster</title>
+    <style type="text/css">
+        body{
+            background-color:#000000;
+        }
+
+        p{
+            color:#33FF66;
+            font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+            font-size:12px;
+        }
+
+        #text_top {
+            position:relative;
+            z-index: 4;
+        }
+
+        #top {
+            position:absolute;
+            left:191px;
+            top:15px;
+            z-index: 4;
+        }
+
+        #container{
+            position:absolute;
+            left:0px;
+            top:0px;
+            z-index: 0;
+        }
+
+        .lightning{
+            display:none;
+            position:absolute;
+            left:0px;
+            top:0px;
+            z-index: 0;
+        }
+
+        #frame {
+            position:absolute;
+            left:100px;
+            top:100px;
+            width:545px;
+            height:629px;
+            background-image:url(../images/frame.png);
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        #pic_box{
+            position:relative;
+            left:91px;
+            top:84px;
+            width:367px;
+            height:460px;
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        .face{
+            position:relative;
+            left:0px;
+            top:0px;
+            z-index: 1;
+        }
+
+        #head{
+            height:172px;
+        }
+
+        #eyes{
+            height:79px;
+        }
+
+        #nose{
+            height:86px;
+        }
+
+        #mouth{
+            height:117px;
+        }
+
+
+    </style>
+</head>
+<body>
+<header id="top">
+    <img id="text_top" src=""/>
+    <p>Make your own monster face by clicking on the picture.</p>
+</header>
+<div id="container">
+    <img class="lightning" id="lightning1" src="../Image HTML/lightning-01.jpg" height="640" width="960"/>
+    <img class="lightning" id="lightning2" src="../Image HTML/lightning-02.jpg" height="640" width="960"/>
+    <img class="lightnin
+    g" id="lightning3" src="../Image HTML/lightning-03.jpg" height="633" width="960"/>
+    <div id="frame">
+        <div id="pic_box">
+            <div id="head" class="face"><img src="../Image HTML/headsstrip.jpg" height="172" width="3670"/>
+            </div>
+            <div id="eyes" class="face"><img src="../Image HTML/eyesstrip.jpg" height="79" width="3670"/>
+            </div>
+            <div id="nose" class="face"><img src="../Image HTML/nosesstrip.jpg" height="86" width="3670"/>
+            </div>
+            <div id="mouth" class="face"><img src="../Image HTML/mouthsstrip.jpg" height="123" width="3670"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="your_scripts.js"></script>
+</body>
+</html>
